@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #1e2025;
+    background-color: #31363F;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -74,12 +74,12 @@ body {
 }
 
 .projeto, .habilidade-list, .links {
-    background: #1e2025;
+    background: #31363F;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    color: rgb(255, 255, 255);
+    color: #EEEEEE;
 }
 
 .habilidade-list {
@@ -87,7 +87,7 @@ body {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    color: rgb(255, 255, 255);
+    color: #EEEEEE;
 }
 
 .habilidade-list button {
