@@ -1,10 +1,128 @@
-html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-  }
-  
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #121417;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1e2025;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #d4d5d6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.fotoperfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #5e6064;
+}
+
+.apresentacao, .nome-stack, section {
+    text-align: center;
+    margin: 40px 10%;
+}
+
+.nome-stack h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nome-stack h2 {
+    font-size: 20px;
+    color: #333435;
+    font-weight: 600;
+}
+
+.projeto, .habilidade-list, .links {
+    background: #1e2025;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    color: rgb(255, 255, 255);
+}
+
+.habilidade-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+}
+
+.habilidade-list button {
+    background: #535559;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.habilidade-list button:hover {
+    background: #484b50;
+}
+
+.links a {
+    color: #d4d5d6;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
