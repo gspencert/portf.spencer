@@ -1,19 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const btnTop = document.createElement("button");
-    btnTop.textContent = "↑";
-    btnTop.classList.add("btn", "btn-primary", "fixed-bottom", "m-3");
-    btnTop.style.display = "none";
-    document.body.appendChild(btnTop);
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
 
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 300) {
-            btnTop.style.display = "block";
-        } else {
-            btnTop.style.display = "none";
-        }
-    });
+    function checkScroll() {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight * 0.8) {
+                section.classList.add("active");
+            }
+        });
+    }
 
-    btnTop.addEventListener("click", function() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    window.addEventListener("scroll", checkScroll);
+    checkScroll();
 });
