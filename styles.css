@@ -56,7 +56,7 @@ body {
     border: 3px solid #5e6064;
 }
 
-.apresentacao, .nome-stack, section {
+.apresentacao, .nome-stack, section{
     text-align: center;
     margin: 40px 10%;
 }
